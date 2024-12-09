@@ -1,0 +1,128 @@
+{
+  "Mesh": {
+    "prefix": "mesh",
+    "body": [
+      "<mesh></mesh>"
+    ],
+    "description": "Ajoute une balise <mesh>."
+  },
+  "Canvas": {
+    "prefix": "canvas",
+    "body": [
+      "<Canvas></Canvas>"
+    ],
+    "description": "Ajoute une balise <Canvas>."
+  },
+  "Box": {
+    "prefix": "box",
+    "body": [
+      "<mesh><boxGeometry args={[1, 1, 1]} /><meshStandardMaterial color='orange' /></mesh>"
+    ],
+    "description": "Ajoute une boîte avec une géométrie et un matériau."
+  },
+  "Sphere": {
+    "prefix": "sphere",
+    "body": [
+      "<mesh><sphereGeometry args={[1, 32, 32]} /><meshStandardMaterial color='blue' /></mesh>"
+    ],
+    "description": "Ajoute une sphère avec une géométrie et un matériau."
+  },
+  "Plane": {
+    "prefix": "plane",
+    "body": [
+      "<mesh><planeGeometry args={[5, 5]} /><meshStandardMaterial color='green' /></mesh>"
+    ],
+    "description": "Ajoute un plan avec une géométrie et un matériau."
+  },
+  "Cylinder": {
+    "prefix": "cylinder",
+    "body": [
+      "<mesh><cylinderGeometry args={[1, 2, 2, 32]} /><meshStandardMaterial color='red' /></mesh>"
+    ],
+    "description": "Ajoute un cylindre avec une géométrie et un matériau."
+  },
+  "Light": {
+    "prefix": "light",
+    "body": [
+      "<pointLight position={[10, 10, 10]} intensity={1} />"
+    ],
+    "description": "Ajoute une lumière ponctuelle."
+  },
+  "Directional Light": {
+    "prefix": "directionalLight",
+    "body": [
+      "<directionalLight position={[10, 10, 10]} intensity={1} />"
+    ],
+    "description": "Ajoute une lumière directionnelle."
+  },
+  "Ambient Light": {
+    "prefix": "ambientLight",
+    "body": [
+      "<ambientLight intensity={0.5} />"
+    ],
+    "description": "Ajoute une lumière ambiante."
+  },
+  "Spot Light": {
+    "prefix": "spotLight",
+    "body": [
+      "<spotLight position={[0, 10, 0]} angle={Math.PI / 4} intensity={1} />"
+    ],
+    "description": "Ajoute une lumière spot."
+  },
+  "Camera": {
+    "prefix": "camera",
+    "body": [
+      "<perspectiveCamera position={[0, 0, 5]} fov={75} near={0.1} far={100} />"
+    ],
+    "description": "Ajoute une caméra."
+  },
+  "Controls": {
+    "prefix": "controls",
+    "body": [
+      "<OrbitControls enableDamping dampingFactor={0.25} rotateSpeed={0.5} />"
+    ],
+    "description": "Ajoute un contrôleur de caméra."
+  },
+  "Text": {
+    "prefix": "text",
+    "body": [
+      "<Text position={[0, 0, 0]} fontSize={1} color='black'>Hello, World!</Text>"
+    ],
+    "description": "Ajoute un texte."
+  },
+  "Group": {
+    "prefix": "group",
+    "body": [
+      "<group></group>"
+    ],
+    "description": "Ajoute un groupe."
+  },
+  "GLTF": {
+    "prefix": "gltf",
+    "body": [
+      "<primitive object={gltf.scene} />"
+    ],
+    "description": "Ajoute un modèle GLTF."
+  },
+  "MeshStandardMaterial": {
+    "prefix": "meshStandardMaterial",
+    "body": [
+      "<meshStandardMaterial color='white' />"
+    ],
+    "description": "Ajoute un matériau MeshStandard."
+  },
+  "MeshBasicMaterial": {
+    "prefix": "meshBasicMaterial",
+    "body": [
+      "<meshBasicMaterial color='white' />"
+    ],
+    "description": "Ajoute un matériau MeshBasic."
+  },
+  "Material": {
+    "prefix": "material",
+    "body": [
+      "<material></material>"
+    ],
+    "description": "Ajoute un élément Material."
+  }
+}
