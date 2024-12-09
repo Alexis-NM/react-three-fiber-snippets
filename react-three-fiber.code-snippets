@@ -15,42 +15,44 @@
 		],
 		"description": "Ajoute une balise <Canvas>."
 	},
+
 	// Geometry snippets
-	"Box": {
+	"Box Geometry": {
 		"prefix": "boxGeometry",
 		"body": [
 			"<boxGeometry />"
 		],
 		"description": "Ajoute une boîte."
 	},
-	"Sphere": {
+	"Sphere Geometry": {
 		"prefix": "sphereGeometry",
 		"body": [
 			"<sphereGeometry />"
 		],
 		"description": "Ajoute une sphère."
 	},
-	"Plane": {
+	"Plane Geometry": {
 		"prefix": "planeGeometry",
 		"body": [
 			"<planeGeometry />"
 		],
 		"description": "Ajoute un plan."
 	},
-	"Cylinder": {
+	"Cylinder Geometry": {
 		"prefix": "cylinderGeometry",
 		"body": [
 			"<mesh><cylinderGeometry />"
 		],
 		"description": "Ajoute un cylindre"
 	},
-	"TorusKnotGeometry": {
+	"Torus Knot Geometry": {
 		"prefix": "torusKnotGeometry",
 		"body": [
 			"<torusKnotGeometry />"
 		],
 		"description": "Ajoute un torus knot."
 	},
+
 	// Light snippets
 	"Light": {
 		"prefix": "light",
@@ -80,6 +82,7 @@
 		],
 		"description": "Ajoute une lumière spot."
 	},
+
 	// Camera snippets
 	"Camera": {
 		"prefix": "camera",
@@ -91,10 +94,11 @@
 	"Orbit Controls": {
 		"prefix": "orbitControls",
 		"body": [
-			"<OrbitControls args={[camera, gl.domElement]} />"
+			"<orbitControls args={[camera, gl.domElement]} />"
 		],
 		"description": "Ajoute des contrôles orbitaux."
 	},
+
 	// Object snippets
 	"Text": {
 		"prefix": "text",
@@ -117,6 +121,7 @@
 		],
 		"description": "Ajoute un modèle GLTF."
 	},
+
 	// Material snippets
 	"MeshStandardMaterial": {
 		"prefix": "meshStandardMaterial",
@@ -146,6 +151,7 @@
 		],
 		"description": "Ajoute un élément Material."
 	},
+	
 	// Parameters snippets
 	"Position": {
 		"prefix": "position",
