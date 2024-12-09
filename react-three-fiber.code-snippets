@@ -1,5 +1,6 @@
 // THREE.js React Three Fiber snippets
 {
+	// Basic snippets
 	"Mesh": {
 		"prefix": "mesh",
 		"body": [
@@ -14,6 +15,7 @@
 		],
 		"description": "Ajoute une balise <Canvas>."
 	},
+	// Geometry snippets
 	"Box": {
 		"prefix": "boxGeometry",
 		"body": [
@@ -49,6 +51,7 @@
 		],
 		"description": "Ajoute un torus knot."
 	},
+	// Light snippets
 	"Light": {
 		"prefix": "light",
 		"body": [
@@ -77,6 +80,7 @@
 		],
 		"description": "Ajoute une lumière spot."
 	},
+	// Camera snippets
 	"Camera": {
 		"prefix": "camera",
 		"body": [
@@ -84,13 +88,14 @@
 		],
 		"description": "Ajoute une caméra."
 	},
-	"Controls": {
-		"prefix": "controls",
+	"Orbit Controls": {
+		"prefix": "orbitControls",
 		"body": [
-			"<OrbitControls enableDamping dampingFactor={0.25} rotateSpeed={0.5} />"
+			"<OrbitControls args={[camera, gl.domElement]} />"
 		],
-		"description": "Ajoute un contrôleur de caméra."
+		"description": "Ajoute des contrôles orbitaux."
 	},
+	// Object snippets
 	"Text": {
 		"prefix": "text",
 		"body": [
@@ -112,17 +117,18 @@
 		],
 		"description": "Ajoute un modèle GLTF."
 	},
+	// Material snippets
 	"MeshStandardMaterial": {
 		"prefix": "meshStandardMaterial",
 		"body": [
-			"<meshStandardMaterial color='white' />"
+			"<meshStandardMaterial />"
 		],
 		"description": "Ajoute un matériau MeshStandard."
 	},
 	"MeshBasicMaterial": {
 		"prefix": "meshBasicMaterial",
 		"body": [
-			"<meshBasicMaterial color='white' />"
+			"<meshBasicMaterial />"
 		],
 		"description": "Ajoute un matériau MeshBasic."
 	},
@@ -139,5 +145,76 @@
 			"<material></material>"
 		],
 		"description": "Ajoute un élément Material."
+	},
+	// Parameters snippets
+	"Position": {
+		"prefix": "position",
+		"body": [
+			"position={[0, 0, 0]}"
+		],
+		"description": "Ajoute un paramètre de position."
+	},
+	"Position-x": {
+		"prefix": "position-x",
+		"body": [
+			"position-x={0}"
+		],
+		"description": "Ajoute un paramètre de position x."
+	},
+	"Position-y": {
+		"prefix": "position-y",
+		"body": [
+			"position-y={0}"
+		],
+		"description": "Ajoute un paramètre de position y."
+	},
+	"Position-z": {
+		"prefix": "position-z",
+		"body": [
+			"position-z={0}"
+		],
+		"description": "Ajoute un paramètre de position z."
+	},
+	"Rotation": {
+		"prefix": "rotation",
+		"body": [
+			"rotation={[0, 0, 0]}"
+		],
+		"description": "Ajoute un paramètre de rotation."
+	},
+	"Rotation-x": {
+		"prefix": "rotation-x",
+		"body": [
+			"rotation-x={0}"
+		],
+		"description": "Ajoute un paramètre de rotation x."
+	},
+	"Rotation-y": {
+		"prefix": "rotation-y",
+		"body": [
+			"rotation-y={0}"
+		],
+		"description": "Ajoute un paramètre de rotation y."
+	},
+	"Rotation-z": {
+		"prefix": "rotation-z",
+		"body": [
+			"rotation-z={0}"
+		],
+		"description": "Ajoute un paramètre de rotation z."
+	},
+	"Scale": {
+		"prefix": "scale",
+		"body": [
+			"scale={[1, 1, 1]}"
+		],
+		"description": "Ajoute un paramètre d'échelle."
+	},
+	"Color": {
+		"prefix": "color",
+		"body": [
+			"color='red'"
+		],
+		"description": "Ajoute un paramètre de couleur."
 	}
 }
