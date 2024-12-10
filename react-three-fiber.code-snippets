@@ -52,6 +52,13 @@
 		],
 		"description": "Ajoute un torus knot."
 	},
+	"Buffer Geometry": {
+		"prefix": "bufferGeometry",
+		"body": [
+			"<bufferGeometry></bufferGeometry>"
+		],
+		"description": "Ajoute une géométrie tampon."
+	},
 
 	// Light snippets
 	"Light": {
@@ -87,23 +94,46 @@
 	"Camera": {
 		"prefix": "camera",
 		"body": [
-			"<perspectiveCamera position={[0, 0, 5]} fov={75} near={0.1} far={100} />"
+			"camera = {{ fov:45, near:0.1, far:100, position:[0, 0, 5] }}"
 		],
 		"description": "Ajoute une caméra."
 	},
+	"Orthographic Camera": {
+		"prefix": "orthographic camera",
+		"body": [
+			"orthographic camera = {{ fov:45, zoom:100, near:0.1, far:100, position:[0, 0, 5] }}"
+		],
+		"description": "Ajoute une caméra orthographique."
+	},
+
+	// Controls snippets
 	"Orbit Controls": {
 		"prefix": "orbitControls",
 		"body": [
-			"<orbitControls args={[camera, gl.domElement]} />"
+			"<OrbitControls />"
 		],
 		"description": "Ajoute des contrôles orbitaux."
+	},
+	"Transform Controls": {
+		"prefix": "transformControls",
+		"body": [
+			"<TransformControls object={ } mode='translate'/>"
+		],
+		"description": "Ajoute des contrôles de transformation."
+	},
+	"Pivot Controls": {
+		"prefix": "pivotControls",
+		"body": [
+			"<PivotControls anchor={[0, 0, 0]} depthTest={false} lineWidth={4} axisColors={['#9381ff', '#ff4d6d', '#7ae582']} scale={1.2} fixed={false}></PivotControls>"
+		],
+		"description": "Ajoute des contrôles de pivot."
 	},
 
 	// Object snippets
 	"Text": {
 		"prefix": "text",
 		"body": [
-			"<Text position={[0, 0, 0]} fontSize={1} color='black'>Hello, World!</Text>"
+			"<Text font='./your-font.woff' fontSize={1} color='salmon' position-y={2} textAlign='center'> Hello World ! </Text>"
 		],
 		"description": "Ajoute un texte."
 	},
@@ -120,6 +150,21 @@
 			"<primitive object={gltf.scene} />"
 		],
 		"description": "Ajoute un modèle GLTF."
+	},
+	"Html": {
+		"prefix": "Html",
+		"body": [
+			"<Html position={[1, 1, 0]} wrapperClass='label' center distanceFactor={6} occlude={[ objectRef ]}> Hello World ! </Html>"
+		],
+		"description": "Ajoute un élément Html."
+	},
+
+	"Float": {
+		"prefix": "float",
+		"body": [
+			"<Float></Float>"
+		],
+		"description": "Ajoute un calque flottant."
 	},
 
 	// Material snippets
@@ -150,6 +195,13 @@
 			"<material></material>"
 		],
 		"description": "Ajoute un élément Material."
+	},
+	"Mesh Reflector Material": {
+		"prefix": "MeshReflectorMaterial",
+		"body": [
+			"<MeshReflectorMaterial resolution={512} blur={[1000, 1000]} mixBlur={1} mirror={0.75} color='greenYellow' />"
+		],
+		"description": "Ajoute un matériau MeshReflector."
 	},
 	
 	// Parameters snippets
@@ -222,5 +274,35 @@
 			"color='red'"
 		],
 		"description": "Ajoute un paramètre de couleur."
-	}
+	},
+	"Intensity": {
+		"prefix": "intensity",
+		"body": [
+			"intensity={1.5}"
+		],
+		"description": "Ajoute un paramètre d'intensité."
+	},
+	"Doubleside": {
+		"prefix": "side",
+		"body": [
+			"side={THREE.DoubleSide}"
+		],
+		"description": "Ajoute un paramètre de double face."
+	},
+
+	// Attributes snippets
+	"Buffer Attribute": {
+		"prefix": "bufferAttribute",
+		"body": [
+			"<bufferAttribute attach='attributes-position' count={verticesCount} itemSize={3} array={positions} />"],
+		"description": "Ajoute un attribut tampon."
+	},
+	// Utils
+	"Ref": {
+		"prefix": "ref",
+		"body": [
+			"ref={}"
+		],
+		"description": "Ajoute un hook de référence."
+	},
 }
