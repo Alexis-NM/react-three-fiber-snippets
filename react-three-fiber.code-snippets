@@ -90,6 +90,29 @@
 		"description": "Ajoute une lumière spot."
 	},
 
+	//Shadows snippets
+	"Soft Shadows": {
+		"prefix": "SoftShadows",
+		"body": [
+			"<SoftShadows sizes={25} samples={10} focus={0} />"
+		],
+		"description": "Ajoute des ombres douces."
+	},
+	"Accumulative Shadows": {
+		"prefix": "AccumulativeShadows",
+		"body": [
+			"<AccumulativeShadows position={[0, -0.99, 0]} scale={10} color='red' opacity={0.8} frames={Infinity} blend={100} temporal> <RandomizedLight amount={8} radius={1} ambient={0.5} intensity={3} position={[1, 2, 3]} bias={0.001} /> </AccumulativeShadows>"
+		],
+		"description": "Ajoute des ombres accumulatives."
+	},
+	"Contact Shadows": {
+		"prefix": "ContactShadows",
+		"body": [
+			"<ContactShadows />"
+		],
+		"description": "Ajoute des ombres de contact."
+	},
+
 	// Camera snippets
 	"Camera": {
 		"prefix": "camera",
@@ -289,6 +312,34 @@
 		],
 		"description": "Ajoute un paramètre de double face."
 	},
+	"Far": {
+		"prefix": "far",
+		"body": [
+			"far={}"
+		],
+		"description": "Ajoute un paramètre de distance maximale."
+	},
+	"Near": {
+		"prefix": "near",
+		"body": [
+			"near={}"
+		],
+		"description": "Ajoute un paramètre de distance minimale."
+	},
+	"FOV": {
+		"prefix": "fov",
+		"body": [
+			"fov={}"
+		],
+		"description": "Ajoute un paramètre de champ de vision."
+	},
+	"Zoom": {
+		"prefix": "zoom",
+		"body": [
+			"zoom={}"
+		],
+		"description": "Ajoute un paramètre de zoom."
+	},
 
 	// Attributes snippets
 	"Buffer Attribute": {
@@ -304,5 +355,19 @@
 			"ref={}"
 		],
 		"description": "Ajoute un hook de référence."
+	},
+	"Args": {
+		"prefix": "args",
+		"body": [
+			"args={[]}"
+		],
+		"description": "Ajoute un paramètre d'arguments."
+	},
+	"Attach": {
+		"prefix": "attach",
+		"body": [
+			"attach=''"
+		],
+		"description": "Ajoute un paramètre d'attachement."
 	},
 }
