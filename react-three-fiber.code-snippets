@@ -45,6 +45,13 @@
 		],
 		"description": "Ajoute un cylindre"
 	},
+	"Torus Geometry": {
+		"prefix": "torusGeometry",
+		"body": [
+			"<torusGeometry />"
+		],
+		"description": "Ajoute un torus."
+	},
 	"Torus Knot Geometry": {
 		"prefix": "torusKnotGeometry",
 		"body": [
@@ -52,6 +59,14 @@
 		],
 		"description": "Ajoute un torus knot."
 	},
+	"icosahedron Geometry": {
+		"prefix": "icosahedronGeometry",
+		"body": [
+			"<icosahedronGeometry args={[0.3, 1]} />"
+		],
+		"description": "Ajoute un icosaèdre."
+	},
+
 	"Buffer Geometry": {
 		"prefix": "bufferGeometry",
 		"body": [
@@ -88,6 +103,13 @@
 			"<spotLight position={[0, 10, 0]} angle={Math.PI / 4} intensity={1} />"
 		],
 		"description": "Ajoute une lumière spot."
+	},
+	"Rect Area Light": {
+		"prefix": "rectAreaLight",
+		"body": [
+			"<rectAreaLight width={10} height={10} intensity={60} color={'red'} />"
+		],
+		"description": "Ajoute une lumière rectangulaire."
 	},
 
 	//Shadows snippets
@@ -226,6 +248,13 @@
 		],
 		"description": "Ajoute un matériau MeshReflector."
 	},
+	"Matcap" : {
+		"prefix": "meshMatcapMaterial",
+		"body": [
+			"<meshMatcapMaterial matcap={matcapTexture} />"
+		],
+		"description": "Ajoute un matériau Matcap."
+	},
 	
 	// Parameters snippets
 	"Position": {
@@ -340,6 +369,20 @@
 		],
 		"description": "Ajoute un paramètre de zoom."
 	},
+	"Polar": {
+		"prefix": "polar",
+		"body": [
+			"polar={[]}"
+		],
+		"description": "Ajoute un paramètre polaire."
+	},
+	"Azimuth": {
+		"prefix": "azimuth",
+		"body": [
+			"azimuth={[]}"
+		],
+		"description": "Ajoute un paramètre d'azimuth."
+	},
 
 	// Attributes snippets
 	"Buffer Attribute": {
@@ -359,7 +402,7 @@
 	"Args": {
 		"prefix": "args",
 		"body": [
-			"args={[]}"
+			"args={[1, 1, 1, 1]}"
 		],
 		"description": "Ajoute un paramètre d'arguments."
 	},
@@ -369,5 +412,20 @@
 			"attach=''"
 		],
 		"description": "Ajoute un paramètre d'attachement."
+	},
+	"primitive": {
+		"prefix": "primitive",
+		"body": [
+			"<primitive object={yourObject.scene} />"
+		],
+		"description": "Ajoute un élément primitif."
+	},
+	// Physics
+	"RigidBody": {
+		"prefix": "RigidBody",
+		"body": [
+			"<RigidBody></RigidBody>"
+		],
+		"description": "Ajoute un corps rigide."
 	},
 }
